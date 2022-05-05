@@ -5,11 +5,8 @@ public class AlerteR implements Runnable{
 	public AlerteR() {
 		
 	}
-	public AlerteR(String name) {
-		Thread.currentThread().setName(name);
-	}
-	public AlerteR(String name, int priority) {
-		Thread.currentThread().setName(name);
+
+	public AlerteR(int priority) {
 		Thread.currentThread().setPriority(priority);
 	}
 	

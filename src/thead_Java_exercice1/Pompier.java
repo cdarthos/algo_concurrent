@@ -41,11 +41,11 @@ public class Pompier {
 		AlerteR testR = new AlerteR();
 		Thread threadtestR = new Thread(testR);
 		
-		AlerteR testR1 = new AlerteR("testR1");
-		Thread threadtestR1 = new Thread(testR1);
+		AlerteR testR1 = new AlerteR();
+		Thread threadtestR1 = new Thread(testR1,"testR1");
 		
-		AlerteR testR2 = new AlerteR("testR2", 10);
-		Thread threadtestR2 = new Thread(testR2);
+		AlerteR testR2 = new AlerteR(10);
+		Thread threadtestR2 = new Thread(testR2, "testR2");
 		
 		
 		
