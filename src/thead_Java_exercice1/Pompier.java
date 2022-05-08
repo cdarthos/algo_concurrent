@@ -1,7 +1,7 @@
 /**
  * 
  */
-package thead_Java_1;
+package thead_Java_exercice1;
 
 /**
  * @author clement
@@ -12,6 +12,10 @@ public class Pompier {
 	/**
 	 * @param args
 	 */
+	
+	
+	
+	
 	public static void main(String[] args) {
 		// Avec la Classe "Alerte extends Thread
 		System.out.println("#####  Avec la Classe \"Alerte extends Thread  #####");

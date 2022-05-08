@@ -5,4 +5,4 @@
  * @author clement
  *
  */
-package thead_Java_1;
+package thead_Java_exercice1;

@@ -1,15 +1,17 @@
 /**
  * 
  */
-package thead_Java_1;
+package thead_Java_exercice1;
 
 /**
  * @author clement
  *
  */
 public class Alerte extends Thread {
-	public Alerte() {
-		
+	
+	static int nbAlerte = 0;
+	
+	public Alerte() {		
 	}
 	public Alerte(String name) {
 		setName(name);
@@ -20,10 +22,10 @@ public class Alerte extends Thread {
 	}
 	
 	
-	
-	public void run() {
+	public void run() {		
+		nbAlerte++;		
 		for(int i = 0;i<5;i++) {
-			System.out.println("Thead : "+getName()+", priorité : "+getPriority() + ", iteration : "+(i+1));
+			System.out.println("Il y a : "+nbAlerte+" alertes, Thead : "+getName()+", priorité : "+getPriority() + ", iteration : "+(i+1));
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
@@ -31,7 +33,6 @@ public class Alerte extends Thread {
 				e.printStackTrace();
 			}
 		}
-		
 	}
 	
 

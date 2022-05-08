@@ -1,4 +1,4 @@
-package thead_Java_1;
+package thead_Java_exercice1;
 
 public class AlerteR implements Runnable{
 
